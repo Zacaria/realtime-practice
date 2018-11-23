@@ -18,7 +18,6 @@
       </div>
       <div class="new-message">
         <input type="text" v-model="text" placeholder="Message..." />
-        <button @click="sendMessage">Envoyer</button>
       </div>
     </div>
 
@@ -117,16 +116,8 @@ export default {
       flex: 1;
       background-color: rgba(0, 0, 0, 0.5);
       border: none;
-      color: #fff;
+      color: $font-color;
       padding: 9px;
-    }
-
-    button {
-      width: 100px;
-      background-color: #42b983;
-      border: none;
-      color: #fff;
-      font-size: 0.8em;
     }
   }
 }

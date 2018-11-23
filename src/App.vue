@@ -25,16 +25,16 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #fff;
-  background-color: #2e3842;
+  background-color: $primary;
+  color: $font-color;
 }
 #nav {
   padding: 30px;
   a {
     font-weight: bold;
-    color: #ffc107;
+    color: $secondary;
     &.router-link-exact-active {
-      color: #f7e100;
+      color: $secondary-accent;
     }
   }
 }

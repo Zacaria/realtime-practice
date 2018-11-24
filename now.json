@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "name": "realtime",
+  "builds": [
+      { "src": "packages/server/src/index.js", "use": "@now/node" },
+      { "src": "packages/ui/dist/**/*", "use": "@now/static" }
+
+  ],
+  "routes": [
+      { "src": "/api", "dest": "/packages/server/src/index.js" },
+      { "src": "/(.*)", "dest": "/packages/ui/dist/$1" },
+      { "src": "/", "dest": "/packages/ui/dist/index.html" }
+  ],
+  "env": {
+      "NODE_ENV": "production"
+  }
+}

@@ -87,7 +87,7 @@ export default {
 
   .messages {
     height: 300px;
-    width: 400px;
+    width: 300px;
     background-color: rgba(0, 0, 0, 0.3);
     overflow-y: scroll;
     padding: 15px;

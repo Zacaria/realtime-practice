@@ -13,7 +13,7 @@ module.exports = {
         '#': 'prettier config in here :)',
         singleQuote: true,
         semi: true,
-        trailingComma: true,
+        trailingComma: "es5",
       },
     ],
   },

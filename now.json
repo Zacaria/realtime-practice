@@ -7,7 +7,7 @@
   ],
   "routes": [
       { "src": "/api", "dest": "/packages/server/src/index.js" },
-      { "src": "/(.*)", "dest": "/packages/ui/dist/$1" },
+      { "src": "/(.*)", "dest": "/packages/ui/$1" },
       { "src": "/", "dest": "/packages/ui/dist/index.html" }
   ],
   "alias": "havesome-realtime"

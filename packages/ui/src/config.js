@@ -1,3 +1,3 @@
-const env = window.NODE_ENV;
+const envPath = window.NODE_ENV === 'production' ? '/api' : ':3000';
 
-export const apiHost = window.location.hostname + env === 'production' ? '/api' : ':3000';
+export const apiHost = window.location.hostname + envPath;

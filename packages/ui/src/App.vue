@@ -14,6 +14,8 @@
 import io from 'socket.io-client';
 import { apiHost } from './config.js';
 
+console.log('ENV', window.NODE_ENV)
+
 const socket = io(apiHost);
 socket.on('connect', function() {
   console.log('connect');

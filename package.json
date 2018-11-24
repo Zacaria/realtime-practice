@@ -5,7 +5,8 @@
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean",
     "dev": "concurrently --kill-others --success first \"lerna run start\"",
-    "build": "lerna run build"
+    "build": "lerna run build",
+    "now-build": "yarn build"
   },
   "devDependencies": {
     "lerna": "^3.4.3"

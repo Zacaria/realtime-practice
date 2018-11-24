@@ -11,8 +11,5 @@
       { "src": "/(.*)", "dest": "/packages/ui/dist/$1" },
       { "src": "/", "dest": "/packages/ui/dist/index.html" }
   ],
-  "env": {
-      "NODE_ENV": "production"
-  },
   "alias": "havesome-realtime"
 }

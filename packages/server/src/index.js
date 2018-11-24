@@ -6,7 +6,7 @@ const io = require('socket.io')(server, { origins: '*:*'});
 // define interactions with client
 io.sockets.on('connection', function(socket){
   console.log('connected ')
-  socket.emit('stream', {'title': "A new title via Socket.IO!"});
+  setInterval(() => socket.emit('stream', {'title': "A new title via Socket.IO!"}), 2000);
 
   socket.on('disconnect', () => {
     console.log('disconnect')

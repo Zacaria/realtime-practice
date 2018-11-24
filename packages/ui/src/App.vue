@@ -12,16 +12,17 @@
 
 <script>
 import io from 'socket.io-client';
+import { apiHost } from './config.js';
 
-const co = 'http://' + window.location.hostname + ':3000';
-console.log(co);
-
-const socket = io(co);
+const socket = io(apiHost);
 socket.on('connect', function() {
-  console.log('totoloo');
+  console.log('connect');
 });
 socket.on('stream', function(p) {
   console.log('stream', p);
+});
+socket.on('disconnection', function() {
+  console.log('disconnect');
 });
 
 export default {

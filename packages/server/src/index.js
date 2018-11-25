@@ -1,7 +1,10 @@
 const app = require('express')();
 
 const server = require('http').createServer(app);
-const io = require('socket.io')(server, { origins: '*:*'});
+const io = require('socket.io')(server, {
+  serveClient: false,
+  origins: '*:*',
+});
 
 // define interactions with client
 io.sockets.on('connection', function(socket){
